@@ -12,9 +12,10 @@
     <Description>A high-performance gRPC caching interceptor with Redis and MemoryCache support.</Description>
     <PackageTags>grpc cache redis memorycache caching interceptor performance</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/Moongazing/GrcpAutoCache</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Moongazing/GrpcAutoCache</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://github.com/Moongazing/GrcpAutoCache</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Moongazing/GrpcAutoCache</PackageProjectUrl>
+    <PackageOutputPath>bin\Release</PackageOutputPath>
     <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
@@ -23,6 +24,11 @@
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.2" />
     <PackageReference Include="StackExchange.Redis" Version="2.8.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ensure icon is included in the package -->
+    <None Include="icon.png" Pack="true" PackagePath="icon.png" />
   </ItemGroup>
 
 </Project>
